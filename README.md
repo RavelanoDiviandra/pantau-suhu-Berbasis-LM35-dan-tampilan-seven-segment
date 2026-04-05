@@ -1,4 +1,4 @@
-# Temperature Monitoring System: LM35 & Multiplexed Seven Segment
+# Temperature Monitoring System: LM35 & Seven Segment
 
 Sistem pemantauan suhu *real-time* berbasis mikrokontroler AVR (ATmega328P). Proyek ini mengimplementasikan manipulasi register tingkat rendah untuk pembacaan sensor LM35 yang presisi menggunakan interupsi perangkat keras (*Timer2 ISR*) dan teknik *multiplexing* tanpa efek bayangan (*flicker-free*) untuk tampilan Seven Segment 2-digit.
 
