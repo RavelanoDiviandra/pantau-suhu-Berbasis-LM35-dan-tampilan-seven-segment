@@ -10,8 +10,7 @@ Sistem ini dirancang untuk dijalankan pada arsitektur **Arduino Uno/Nano** (AVR)
 2. Sensor Suhu LM35
 3. Display Seven Segment 2-Digit (Common Anode)
 4. 3x LED Indikator (Merah, Kuning, Hijau)
-5. Buzzer Aktif
-6. Transistor NPN (untuk Switching Digit)
+5. Transistor NPN (untuk Switching Digit)
 
 ### Matriks Pengkabelan (Pinout)
 | Komponen | Pin Arduino | Tipe Logika |
@@ -29,7 +28,7 @@ Sistem ini dirancang untuk dijalankan pada arsitektur **Arduino Uno/Nano** (AVR)
 Sistem beroperasi secara asinkron; pembaruan tampilan berjalan di loop utama, sementara evaluasi suhu dilakukan setiap 500ms melalui interupsi:
 * **Kondisi Aman (< 30°C):** LED Hijau aktif.
 * **Kondisi Waspada (30°C - 35°C):** LED Kuning aktif.
-* **Kondisi Bahaya (> 35°C):** LED Merah dan Buzzer aktif sebagai alarm auditif.
+* **Kondisi Bahaya (> 35°C):** LED Merah aktif
 * **Sampling Rate:** 2Hz (Satu konversi ADC setiap 500ms) menggunakan Timer2 ISR.
 
 ## Deployment (Instalasi)
